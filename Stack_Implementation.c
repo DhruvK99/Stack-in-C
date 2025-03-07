@@ -77,8 +77,9 @@ void pop(Stack *stack)
         printf("Stack underflow! Cannot pop\n");
         return;
     }
-    stack->top--; // Changing the index, not erasing the value
     printf("Popped successfully!\n");
+    printf("%d\n",stack->arr[stack->top]);
+    stack->top--; // Changing the index, not erasing the value
 }
 
 int top(Stack *stack) 
